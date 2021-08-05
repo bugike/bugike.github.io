@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/b19b0b5698.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    <title>HTML-CSS-DEMO</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <a href="#" class="navbar-item"><i class="fas fa-home"></i>Home</a>
+        <a href="#" class="navbar-item"><i class="fas fa-search"></i>Search</a>
+        <a href="#" class="navbar-item"><i class="fas fa-envelope"></i>Contact</a>
+        <a href="#" class="navbar-item"><i class="fas fa-user"></i>Login</a>
+    </div>
+
+    <!-- Article -->
+    <div class="article-container">
+        <img src="images/photo.jpg" alt='photo'>
+        <div class="article-box">
+            <h1>Title for the article</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Suscipit nulla hic ut quia fugit enim repudiandae voluptatibus 
+            corporis eum ipsam quo quod fugiat eligendi voluptates nesciunt 
+            sint exercitationem, libero qui. Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Doloribus, temporibus unde eligendi laudantium nesciunt 
+            at culpa. Sunt odio modi minima?</p>
+        </div>
+    </div>  
+    
+    <!-- checkout -->
+    <div class="checkout-container">
+        <!-- billing -->
+        <form class="billing-box">
+            <div class="box-top">
+                <div class="billing-info col-left">
+                    <h2>Billing Address</h2>
+                    <label><i class="fas fa-user"></i>Full Name</label>
+                    <input type="text" placeholder="  John M. Doe">
+                    <label><i class="fas fa-envelope"></i>Email</label>
+                    <input type="text" placeholder="  michael@example.com">
+                    <label><i class="fas fa-address-card"></i>Address</label>
+                    <input type="text" placeholder="  830 Hillview Dr">
+                    <label><i class="fas fa-city"></i>City</label>
+                    <input type="text" placeholder="  San Jose">
+                    <div class="column-2">
+                        <div class="col-left ">
+                            <label>State</label>
+                            <input type="text" placeholder="  CA">
+                        </div>
+                        <div class="col-right">
+                            <label>Zip</label>
+                            <input type="text" placeholder="  90001">
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-info col-right">
+                    <h2>Payment</h2>
+                    <label>Accepted Cards</label>
+                    <div class="card-list">
+                        <i class="fab fa-cc-visa" id="visa"></i>
+                        <i class="fab fa-cc-apple-pay" id="apple-pay"></i>
+                        <i class="fab fa-cc-discover" id="discover"></i>
+                        <i class="fab fa-cc-mastercard" id="mastercard"></i>
+                    </div>
+                    <label>Name on Card</label>
+                    <input type="text" placeholder="  John M. Doe">
+                    <label>Credit Card Number</label>
+                    <input type="text" placeholder="  xxxx-xxxx-xxxx-xxxx">
+                    <label>Exp Month</label>
+                    <input type="text" placeholder="  August">
+                    <div class="column-2">
+                        <div class="col-left">
+                            <label>Exp Year</label>
+                            <input type="text" placeholder="  2021">
+                        </div>
+                        <div class="col-right">
+                            <label>CVV</label>
+                            <input type="text" placeholder="  123">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-bottom">
+                <div class="check-box">
+                    <input type="checkbox" id="check-box-input">
+                    <label><b> Shipping address same as billing</b></label>
+                </div>
+                <input type="submit" value="Continue to checkout" id="checkout-button">
+            </div>
+        </form>
+        
+        <!-- cart -->
+        <div class="cart-box">
+            <div class="cart-row"><b>Cart</b><span><i class="fas fa-shopping-cart"></i>4</span></div>
+            <div class="cart-row"><a href="#">Item 1</a><span class="price">$2</span></div>
+            <div class="cart-row"><a href="#">Item 2</a><span class="price">$5</span></div>
+            <div class="cart-row"><a href="#">Item 3</a><span class="price">$8</span></div>
+            <div class="cart-row"><a href="#">Item 4</a><span class="price">$15</span></div>
+            <hr>
+            <div class="cart-row"><b>Total</b><span>$30</span></div>
+        </div>
+    </div>
+
+    <!-- timeline -->
+    <div class="timeline-container column-2">
+        <div class="timeline-col-left">
+            <div class="timeline-card left">
+                <div class="card-content">
+                    <h1>2019</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Pariatur doloribus aspernatur sit, minima aut voluptas, 
+                        quibusdam dolore aliquid totam ex quas! Neque facere nisi, 
+                        vel quisquam voluptatem provident eum assumenda.</p>
+                </div>
+                <div class="left-triangle"></div>
+                <i class="fas fa-dot-circle"></i>
+            </div>
+            <div class="timeline-card empty"></div>
+            <div class="timeline-card left">
+                <div class="card-content">
+                    <h1>2017</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur doloribus aspernatur sit, minima aut voluptas,
+                        quibusdam dolore aliquid totam ex quas! Neque facere nisi,
+                        vel quisquam voluptatem provident eum assumenda.</p>
+                </div>
+                <div class="left-triangle"></div>
+                <i class="fas fa-dot-circle"></i>
+            </div>
+        </div>
+        <div class="timeline-col-right">
+            <div class="timeline-card empty"></div>
+            <div class="timeline-card right">
+                <div class="card-content">
+                    <h1>2018</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur doloribus aspernatur sit, minima aut voluptas,
+                        quibusdam dolore aliquid totam ex quas! Neque facere nisi,
+                        vel quisquam voluptatem provident eum assumenda.</p>
+                </div>
+                <div class="right-triangle"></div>
+                <i class="fas fa-dot-circle"></i>
+            </div>
+            <div class="timeline-card empty"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
